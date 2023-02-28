@@ -484,7 +484,7 @@ div.addEventListener("touchstart", function(event) {
     document.getElementById("l-number").innerHTML="-"+value+"%";
 	stressBarras(value)
 	return value;
-  }, 1500);
+  }, 1300);
 });
 
 
@@ -494,17 +494,17 @@ div.addEventListener("touchend", function(event) {
 
 
 function stressBarras(porcentaje){
-	if (porcentaje === 5) {
+	if (porcentaje === 2) {
 		document.getElementById("c1").style.backgroundColor = "white";
-	} else if (porcentaje === 10) {
+	} else if (porcentaje === 4) {
 		document.getElementById("c1"&&"c2").style.backgroundColor = "white";
-	} else if (porcentaje === 15) {
+	} else if (porcentaje === 6) {
 		document.getElementById("c1"&&"c2" && "c3").style.backgroundColor = "white";
-	} else if (porcentaje === 20) {
+	} else if (porcentaje === 8) {
 		document.getElementById("c1"&&"c2" && "c3" && 'c4').style.backgroundColor = "white";
-	} else if (porcentaje === 25) {
+	} else if (porcentaje === 10) {
 		document.getElementById("c1"&&"c2" && "c3" && 'c4' && 'c5').style.backgroundColor = "white";
-	} else if (porcentaje === 30) {
+	} else if (porcentaje === 12) {
 		document.getElementById("c1"&&"c2" && "c3" && 'c4' && 'c5'&& 'c6').style.backgroundColor = "white";
 	}
 }
@@ -522,7 +522,7 @@ function startStress() {
 		document.getElementById("s-number").innerHTML="-"+strPorcentage+"%";
 		strBarras(strPorcentage)
 		return strPorcentage;
-	},1500)
+	},1300)
 }
 
 
@@ -532,17 +532,17 @@ function stopStress() {
 }
 
 function strBarras(strPorcentage){
-	if (strPorcentage === 5) {
+	if (strPorcentage === 2) {
 		document.getElementById("s1").style.backgroundColor = "white";
-	} else if (strPorcentage === 10) {
+	} else if (strPorcentage === 4) {
 		document.getElementById("s1"&&"s2").style.backgroundColor = "white";
-	} else if (strPorcentage === 15) {
+	} else if (strPorcentage === 6) {
 		document.getElementById("s1"&&"s2" && "s3").style.backgroundColor = "white";
-	} else if (strPorcentage === 20) {
+	} else if (strPorcentage === 8) {
 		document.getElementById("s1"&&"s2" && "s3" && 's4').style.backgroundColor = "white";
-	} else if (strPorcentage === 25) {
+	} else if (strPorcentage === 10) {
 		document.getElementById("s1"&&"s2" && "s3" && 's4' && 's5').style.backgroundColor = "white";
-	} else if (strPorcentage === 30) {
+	} else if (strPorcentage === 12) {
 		document.getElementById("s1"&&"s2" && "s3" && 's4' && 's5'&& 's6').style.backgroundColor = "white";
 	}
 }
