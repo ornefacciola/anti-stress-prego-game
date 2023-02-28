@@ -347,11 +347,11 @@ function drawImages(image) {
 function updateTimer() {
 	seconds++;
 	document.getElementById("t-number").innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-	if (seconds === 5){
+	if (seconds === 25){
 		myStopFunction()
 		seconds = 0;
 		document.getElementById("t-number").innerHTML = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-		if (value > 5){
+		if (value < 10){
 			youFailed();
 		} else {
 			screen3.style.display="none"
@@ -484,7 +484,7 @@ div.addEventListener("touchstart", function(event) {
     document.getElementById("l-number").innerHTML="-"+value+"%";
 	stressBarras(value)
 	return value;
-  }, 1000);
+  }, 1500);
 });
 
 
