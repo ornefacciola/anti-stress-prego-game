@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prego Game</title>
+    <link rel="stylesheet" href="files.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/03996167b3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body style="background-color: #f0f0f0;">
+    <div class="desktop" id="dsktop">
+        <div id="stScreen" style="display:block" class="screen">
+            <div class="background">
+                <img src="STRESS X.png" alt="" class="bckimg">
+            </div>
+            <div class="textcontainer">
+                <div class="title">
+                    <h1>ANTI</h1>
+                    <h1 id="t2">STRESS</h1>
+                    <h2>game</h2>
+                </div>
+            </div>
+            <div class="byprego">
+                <img src="./img/by pregoprego.png" alt="pregologo" class="logo">
+            </div>
+            <div class="buttonContainer">
+                <button class="startButton" id="stButton">
+                    start
+                </button>
+            </div>
+        </div>
+        <div id="ndScreen" style="display:none"  class="screen">
+            <div class="background">
+                <img src="STRESS X.png" alt="mobile background">
+            </div>
+            <div class="text">
+                <p class="click">
+                    Click any image and draw for 25 seconds, achieve -10% less stress & boost dopamine to win
+                </p>
+            </div>
+            <div class="zombiecontainer">
+                <div class="imgcont">
+                    <img src="./img/Group 897zomb.png" alt="zombie" class="zimage">
+                    <div class="changingText"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile">
+        <div id="firstScreen" style="display:block">
+            <div class="background">
+                <img src="./img/mobile1.png" alt="mobile background">
+            </div>
+            <div class="textcontainer">
+                <div class="title">
+                    <h1>ANTI</h1>
+                    <h1 id="t2">STRESS</h1>
+                    <h2>game</h2>
+                </div>
+            </div>
+            <div class="byprego">
+                <img src="./img/by pregoprego.png" alt="pregologo" class="logo">
+            </div>
+            <div class="buttonContainer">
+                <button class="startButton" id="firstButton">
+                    start
+                </button>
+            </div>
+        </div>
+        <div id="secondScreen" style="display:none">
+            <div class="background">
+                <img src="./img/mobile1.png" alt="mobile background">
+            </div>
+            <div class="zombiecontainer">
+                <div class="imgc">
+                    <img src="./img/Group 897zomb.png" alt="zombie" class="zimage">
+                </div>
+            </div>
+            <div class="text">
+                <p class="click">
+                    Click any image and draw for 25 seconds, achieve -10% less stress & boost dopamine to win
+                </p>
+            </div>
+        </div>
+        <div id="thirdScreen" style="display:none">
+            <div class="top">
+                <div class="gametitle">
+                    ANTI-STRESS game
+                </div>
+                <div class="container text-center">
+                    <div class="row levels">
+                        <div class="col">
+                            <div class="col col-lg-2" id="d-title">
+                                dopamine
+                            </div>
+                            <div class="col col-lg-2">
+                                <div class="col-12" id="barras">
+                                    <div class="col-2 barra" id="b1"></div>
+                                    <div class="col-2 barra" id="b2"></div>
+                                    <div class="col-2 barra" id="b3"></div>
+                                    <div class="col-2 barra" id="b4"></div>
+                                    <div class="col-2 barra" id="b5"></div>
+                                    <div class="col-2 barra" id="b6"></div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-2" id="d-number">
+                               0%
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col col-lg-2" id="d-title">
+                                stress
+                            </div>
+                            <div class="col-12" id="cuadrados">
+                                <div class="col-2 cuadrado" id="c1"></div>
+                                <div class="col-2 cuadrado" id="c2"></div>
+                                <div class="col-2 cuadrado" id="c3"></div>
+                                <div class="col-2 cuadrado" id="c4"></div>
+                                <div class="col-2 cuadrado" id="c5"></div>
+                                <div class="col-2 cuadrado" id="c6"></div>
+                            </div>
+                            <div class="col col-lg-2" id="l-number">
+                                0%
+                            </div>
+                        </div>
+                      <div class="col">
+                        <div class="col col-lg-2" id="d-title">
+                            time
+                        </div>
+                        <div class="col col-lg-2" id="t-number">
+                            0:00
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div id="myCanvas" class="square">
+                <div id="white"></div>
+            </div>
+            <div class="images">
+                <div class="carousel-container">
+                    <i class="fa-solid fa-arrow-left carousel-button carousel-button-left"></i>
+                    <i class="fa-solid fa-arrow-right carousel-button carousel-button-right"></i>
+                    <div class="choose">choose your anti-stress weapon</div>
+                    <div class="carousel-images">
+                        <img src="./img/image2.png" alt="cat" class="image" id="im1" onclick="selectImage(this);increaseDopamine()" >
+                        <img src="./img/image10.png" alt="booty" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/image14.png" alt="messi" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/image6.png" alt="pug" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/runi.png" alt="runner" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/carni.png" alt="beef" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/perri.png" alt="dog" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/copa.png" alt="copa" class="image"onclick="selectImage(this);increaseDopamine()" >
+                        <img src="./img/dibu.png" alt="dibu" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/image4.png" alt="copa" class="image"onclick="selectImage(this);increaseDopamine()" >
+                        <img src="./img/image11.png" alt="nut" class="image" onclick="selectImage(this);increaseDopamine()">    
+                        <img src="./img/image9.png" alt="tits" class="image"onclick="selectImage(this);increaseDopamine()" >
+                        <img src="./img/image7.png" alt="lips" class="image" onclick="selectImage(this);increaseDopamine()">
+                        <img src="./img/image17.png" alt="dmeme" class="image"onclick="selectImage(this);increaseDopamine()" >
+                    </div>
+                </div>
+                
+            </div>
+        </div>  
+        <div id="fourthScreen">
+            <div class="backgroundWhite">
+                <img src="./img/white.png" alt="" class="fourthImg">
+            </div>
+            <div class="textcontainers">
+                <div class="checks">
+                    <h1>check your</h1>
+                    <h1 id="stitle">SURVIVOR</h1>
+                    <h1>results</h1>
+                </div>
+            </div>
+            <div class="numbers">
+                <div class="dopa">dopamine</div>
+                <div class="numero" id="dnumber"></div>
+                <div class="dopa">stress</div>
+                <div class="numero" id="snumber"></div>
+            </div>
+            <div class="cbutton">
+                <button class="nextb" id="nextbutton">
+                    next
+                </button>
+            </div>
+        </div>
+        <div id="fifthScreen">
+            <div class="backgroundWhite">
+                <img src="./img/white.png" alt="" class="fifthImg">
+            </div>
+            <div class="enjcontainer">
+                <h1>cause you'll die anyways</h1>
+                <img src="./img/Enjoy 1.png" alt="">
+                <h2>your prize</h2>
+            </div>
+            <div class="pbutton">
+                <button class="pab" id="againbutton">
+                    play again
+                </button>
+            </div>
+            <div class="hand_and_fry">
+                <img src="./img/fryOnlyHand.png" alt="" class="z_hand">
+                <img src="./img/fryOnly.png" alt="" class="fries">
+                <img src="img/Star 4.png" alt="" class="star">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="script.js"></script>
+</body>
+</html>

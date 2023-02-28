@@ -1,0 +1,1371 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montagu+Slab:opsz@16..144&family=Montserrat:wght@300;400&family=Oi&family=Poppins:wght@100&display=swap');
+/* desktop */ 
+
+
+
+@media only screen and (min-width: 1500px) {
+    .mobile {
+        display: none;
+      }
+      body{
+          background-color:#F0F0F0;
+      }
+      .background{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 110%;
+          z-index: -1;
+      }
+      .background img {
+          width: 100%;
+          height:101vh;
+          margin-left: -100px;
+      }
+      .textcontainer{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          margin-top: 25vh;
+          margin-left: 5vw;
+          
+      }
+      .textcontainer h1 {
+          font-family: 'Major Mono Display', monospace;
+          color:#C51C39;
+          font-size: 6em;
+      }
+      #t2{
+          margin-top: -15px;
+      }
+      .textcontainer h2{
+          font-family: 'Major Mono Display', monospace;
+          color:white;
+          font-size: 3em;
+          margin-top: -10px;
+          margin-left: 1vw;
+      }
+      .byprego{
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          margin-left: 5vw;  
+      }
+      .logo{
+          width:15%;
+      }
+      .buttonContainer{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 5%;
+          margin-left: 5vw;
+      }
+      .startButton{
+          background-color: #C51C39;
+          color:black;
+          border-radius: 15px;
+          font-size: 2em;
+          border:none;
+          box-shadow: 10px 8px 5px rgb(17, 17, 17);
+          font-family: 'Major Mono Display', monospace;
+      }
+      .zombiecontainer{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 3%;
+          margin-top: 8%;
+      }
+      .zimage{
+          position:relative;
+          width:120%;
+          height:120%;
+      }
+      .changingText{
+        position:absolute;
+        z-index: 1;
+        color:black;
+        font-size: 8em;
+        top:60%;
+        left: 55%;
+        font-family: "Major Mono Display", monospace;
+      }
+      .text{
+          display: flex;
+          width:50%;
+          position: absolute;
+          color:white;
+          font-family: 'Poppins', sans-serif;
+          margin-top: 8%;
+          justify-content: right;
+          align-items: right;
+          margin-left: 35%;
+      }
+      .click{
+          letter-spacing: 5px;
+          font-size: 13px;
+          width: 70%;
+      }
+      .top{
+          height:20%;
+          background-color: #F0F0F0;    
+      }   
+      .gametitle{
+          width:100%;
+          margin-top: 0.5%;
+          font-family:'Major Mono Display', monospace ;
+          display: flex;
+          justify-content: center;
+          color:#C51C39;
+          font-size: 4em;
+      }
+      .niveles{
+          margin-top: 250% !important;
+          font-family: "Major Mono Display", monospace;
+      }
+  
+      .numeros{
+          font-family: "Major Mono Display", monospace;
+          height: 30px;
+          display: flex;
+          justify-content: left;
+          align-items: left;
+          margin-left: -15%;
+      }
+      
+  
+      #l-title{
+          background-color: #000;
+          color:white;
+          width: 98%;
+          font-size: 1em;
+          margin-top: 8px;
+      }
+      #l-title1{
+          background-color: #000;
+          color:white;
+          width: 98%;
+          display: flex;
+          justify-content: left;
+          font-size: 1em;
+          
+      }
+      #l-title2{
+          background-color: #000;
+          color:white;
+          width: 98%;
+          display: flex;
+          justify-content: left;
+          margin-top: 8px;
+          font-size: 1em;
+      }
+      #dop-number{
+          font-size:1.4em;
+          display: flex;
+          justify-content: center;
+          margin-left: 15%;
+      }
+      #s-number{
+          font-size:1.4em;
+          display: flex;
+          margin-left: 15%;
+          justify-content: center;
+      }
+      #ti-number{
+          font-size:1.4em;
+          display: flex;
+          
+          justify-content: center;
+  
+      }
+      #lineas{
+          margin-top: 5px;
+          display: flex;
+          justify-content: right;
+          height:25px;
+          width:98%;
+          margin-left: -15%;
+          padding:0 !important;
+          border: 0.5px solid black;
+          background-color: black;
+      }
+      #squares{
+          margin-top: 5px;
+          width: 87%;
+          padding: 0 ;
+          display: flex;
+          margin-left: -6px;
+          justify-content: right;
+      }
+      .square{
+          height:26px;
+          margin-left: 2.6px;
+          background-color:black;
+          border-color: black;
+          border: 1px solid #000;
+      }
+      .wboard{
+          height: 80vh;
+          width: 93%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 50px;
+          color:white;
+          background-color: white;
+      }
+      .imag{
+          height: 60px;
+          width: 60px;
+          margin-top: 0px;
+          margin-left: 40px;
+          cursor:pointer;
+      }
+      .imag:hover{
+          color: grey;
+          cursor: pointer;
+          opacity: 50%;
+      }
+      .chooseh1 h1{
+          width: 80%;
+          font-family: "Major Mono Display", monospace;
+          font-size: 1.5em;
+          display: flex;
+          margin-left: 40px;
+          justify-content: left;
+          align-items: center;
+          
+      }
+      .images{
+          height:81vh;
+      }
+      .timages{
+         
+          height: 20vh;
+      }
+      .failed{
+          z-index: 9999;
+          display: flex;
+          position: fixed;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-left: 32%;
+          margin-top: 8%;
+          font-size: 1.5em;
+      }
+      .cala{
+          top:30%;
+          height: 100px;
+      }
+      .dont{
+          font-family: "Major Mono Display", monospace;
+          font-size: 2em;
+          margin-bottom:-10%;
+          color:white;
+      }
+      .stress{
+          font-family: "Major Mono Display", monospace;
+          font-size: 5em;
+          color:#C51C39;
+      }
+      .kill{
+          font-family: "Major Mono Display", monospace;
+          font-size: 2.9em;
+          color:white;
+          margin-top: -8%;
+      }
+      .buttonT{
+          background-color: #C51C39;
+          color:black;
+          border-radius: 15px;
+          font-size: 1.2em;
+          width:50%;
+          display: flex;
+          justify-content: center;
+          border:none;
+          margin-top: 8%;
+          box-shadow: 10px 8px 5px rgb(54, 53, 53);
+          font-family: 'Major Mono Display', monospace;
+      }
+      .mano{
+          height:280px;
+      }
+      .checkBackground{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 110%;
+          z-index: -1;
+          height: auto;
+          margin-left: -100px;
+      }
+      .white-fondo-results{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          font-family: "Major Mono Display", monospace;
+          margin-top: 10%;
+      }
+      .checkyour_title, .result_title{
+          font-size: 4em;
+      }
+      .surv_title{
+          font-size: 6em;
+          color:#C51C39;
+      }
+      #results_title{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 3%;
+      }
+      .dopamine_stress_numbers{
+          font-family: "Major Mono Display", monospace;
+          flex-direction: row;
+      }
+      .dopamine_text h1{
+          margin-right: 50px;
+          font-size: 2.5em;
+          background-color: black;
+          color: white;
+          width: 92%;
+      }
+      .dopamine_text h2{
+          font-size: 3em;
+          font-weight: bold;
+      }
+      .stress_text{
+          display: flex;
+          flex-direction: column;
+          justify-content: right;
+          align-items: right;
+          margin-left: 10%;
+      }
+      .stress_text h2{
+          font-weight: bold;
+          font-size: 3em;
+      }
+      .stress_text h1{
+          background-color: black;
+          color: white;
+          font-size: 2.5em;
+          width: 150%;
+      }
+      .next_button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 3%;
+      }
+      .nextButton{
+          border:none;
+          background-color: #C51C39;
+          color:black;
+          border-radius: 15px;
+          font-size: 2em;
+          width:8%;
+          box-shadow: 10px 8px 5px rgb(129, 129, 129);
+          font-family: 'Major Mono Display', monospace;
+      }
+      .friesBackground{
+          top: 0;
+          left: 0;
+          width: 110%;
+          position: fixed;
+          z-index: -3;
+          height:100%;
+          margin-left: -100px;
+  
+      }
+      .zombie_hands{
+          display: flex;
+          justify-content: center;
+      }
+      .zombie_hands img{
+
+        position:fixed;
+        bottom:0px;
+        height:200px;
+        width:400px;
+      }
+      .stress_prize{
+          margin-top: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-family: "Major Mono Display", monospace;
+      }
+      .stress_prize img {
+        height:200px;
+      }
+      .die_anyways_stress{
+        font-size: 2em;
+      }
+      .prize_stress{
+          font-size: 3em;
+          margin-top: -50px;
+      }
+      .again_button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+      }
+      .againButton{
+          border:none;
+          background-color: #C51C39;
+          color:white;
+          border-radius: 15px;
+          font-size:2em;
+          width:18%;
+          box-shadow: 10px 8px 5px rgb(168, 166, 166);
+          font-family: 'Major Mono Display', monospace;
+      }
+  
+  
+      .hand_and_fry{
+          display: flex;
+          justify-content: center;
+      }
+      .z_hand {
+        position: fixed;
+        bottom: 0;
+        height:390px;
+        transform: translateX(-50%) translateY(50%);
+        width:380px;
+        left: 50%;
+      }
+      
+    .fries {
+        height: 310px;
+        width: 310px;
+        position: fixed;
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        z-index: 2;
+    }
+    .star{
+        height:400px;
+        width: 380px;
+        position:fixed;
+        bottom:0;
+        left:38%;        
+        z-index: -1;
+        top: 55%;        
+        animation: fade-out-star 8s ease-in-out, rotate 15s infinite;
+    }
+    @keyframes fade-out-star {
+        from {
+            opacity: -10;
+        }
+        to {
+            opacity: 10;
+        }
+    }
+    @keyframes rotate { 
+       from {
+         transform: rotate(0deg);
+       }
+       to {
+         transform: rotate(180deg);
+       }
+    }
+
+}
+@media only screen and (min-width: 767px)  and (max-width: 1366px){
+    .mobile {
+      display: none;
+    }
+    body{
+        background-color:#F0F0F0;
+    }
+    .background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 110%;
+        z-index: -1;
+        height: auto
+    }
+    .background img {
+        width: 100%;
+        height:101vh;
+        margin-left: -100px;
+    }
+    .textcontainer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 20vh;
+    }
+    .textcontainer h1 {
+        font-family: 'Major Mono Display', monospace;
+        color:#C51C39;
+        font-size: 4.5em;
+    }
+    #t2{
+        margin-top: -15px;
+    }
+    .textcontainer h2{
+        font-family: 'Major Mono Display', monospace;
+        color:white;
+        font-size: 2em;
+        margin-top: -10px;
+    }
+    .byprego{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .logo{
+        width:10%;
+    }
+    .buttonContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .startButton{
+        background-color: #C51C39;
+        color:black;
+        border-radius: 15px;
+        font-size: 1.5em;
+        border:none;
+        box-shadow: 10px 8px 5px rgb(17, 17, 17);
+        font-family: 'Major Mono Display', monospace;
+    }
+    .zombiecontainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 4%;
+    }
+    .zimage{
+        position:relative;
+        width:90%;
+        height:90%;
+    }
+    .zimage{
+        position:relative;
+        width:90%;
+        height: 90%;
+    }
+    .changingText{
+      position:absolute;
+      z-index: 1;
+      color:black;
+      font-size: 6em;
+      top:62%;
+      left: 51%;
+      font-family: "Major Mono Display", monospace;
+    }
+    .text{
+        display: flex;
+        width:50%;
+        position: absolute;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 6%;
+        justify-content: right;
+        align-items: right;
+        margin-left: 35%;
+    }
+    .click{
+        letter-spacing: 5px;
+        font-size: 13px;
+        width: 60%;
+    }
+    .top{
+        height:20%;
+        background-color: #F0F0F0;    
+    }   
+    .gametitle{
+        width:100%;
+        margin-top: 0.5%;
+        font-family:'Major Mono Display', monospace ;
+        display: flex;
+        justify-content: center;
+        color:#C51C39;
+        font-size: 4em;
+    }
+    .niveles{
+        margin-top: 90% !important;
+        font-family: "Major Mono Display", monospace;
+    }
+
+    .numeros{
+        font-family: "Major Mono Display", monospace;
+        height: 30px;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin-left: -15%;
+    }
+    
+
+    #l-title{
+        background-color: #000;
+        color:white;
+        width: 98%;
+        font-size: 1em;
+        margin-top: 8px;
+    }
+    #l-title1{
+        background-color: #000;
+        color:white;
+        width: 98%;
+        display: flex;
+        justify-content: left;
+        font-size: 1em;
+        
+    }
+    #l-title2{
+        background-color: #000;
+        color:white;
+        width: 98%;
+        display: flex;
+        justify-content: left;
+        margin-top: 8px;
+        font-size: 1em;
+    }
+    #dop-number{
+        font-size:1.4em;
+        display: flex;
+        justify-content: center;
+        margin-left: -5%;
+    }
+    #s-number{
+        font-size:1.4em;
+        display: flex;
+        justify-content: center;
+    }
+    #ti-number{
+        font-size:1.4em;
+        display: flex;
+        
+        justify-content: center;
+
+    }
+    #lineas{
+        margin-top: 5px;
+        display: flex;
+        justify-content: right;
+        height:25px;
+        width:98%;
+        margin-left: -15%;
+        padding:0 !important;
+        border: 0.5px solid black;
+        background-color: black;
+    }
+    #squares{
+        margin-top: 5px;
+        width: 87%;
+        padding: 0 ;
+        display: flex;
+        margin-left: -4px;
+        justify-content: right;
+    }
+    .square{
+        height:26px;
+        margin-left: 2.6px;
+        background-color:black;
+        border-color: black;
+        border: 1px solid #000;
+    }
+    .wboard{
+        height: 80vh;
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        color:white;
+        background-color: white;
+    }
+    .imag{
+        height: 50px;
+        width:55px;
+        margin-top: 6px;
+        margin-left: 30px;
+        cursor:pointer;
+    }
+    .imag:hover{
+        color: grey;
+        cursor: pointer;
+        opacity: 50%;
+    }
+    .chooseh1 h1{
+        width: 50%;
+        font-family: "Major Mono Display", monospace;
+        font-size: 1.1em;
+        display: flex;
+        margin-left: 40px;
+        justify-content: left;
+        align-items: center;
+        
+    }
+    .images{
+    
+        height:80vh;
+    }
+    .timages{
+       
+        height: 20vh;
+    }
+    .failed{
+        z-index: 9999;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 35%;
+    }
+    .cala{
+        top:20%;
+        height: 80px;
+    }
+    .dont{
+        font-family: "Major Mono Display", monospace;
+        font-size: 2em;
+        margin-bottom:-2%;
+        color:white;
+    }
+    .stress{
+        font-family: "Major Mono Display", monospace;
+        font-size: 5em;
+        color:#C51C39;
+    }
+    .kill{
+        font-family: "Major Mono Display", monospace;
+        font-size: 2.9em;
+        color:white;
+        margin-top: -2%;
+    }
+    .buttonT{
+        background-color: #C51C39;
+        color:black;
+        border-radius: 15px;
+        font-size: 1.2em;
+        width:50%;
+        display: flex;
+        justify-content: center;
+        border:none;
+        margin-top: 3%;
+        box-shadow: 10px 8px 5px rgb(54, 53, 53);
+        font-family: 'Major Mono Display', monospace;
+    }
+    .mano{
+        height:200px;
+    }
+    .checkBackground{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 110%;
+        z-index: -1;
+        height: auto;
+        margin-left: -100px;
+    }
+    .white-fondo-results{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Major Mono Display", monospace;
+        margin-top: 5%;
+    }
+    .checkyour_title, .result_title{
+        font-size: 2em;
+    }
+    .surv_title{
+        font-size: 3.5em;
+        color:#C51C39;
+    }
+    #results_title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+    }
+    .dopamine_stress_numbers{
+        font-family: "Major Mono Display", monospace;
+        flex-direction: row;
+    }
+    .dopamine_text h1{
+        margin-right: 50px;
+        font-size: 1.7em;
+        background-color: black;
+        color: white;
+        width: 92%;
+    }
+    .dopamine_text h2{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .stress_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+        margin-left: 10%;
+    }
+    .stress_text h2{
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .stress_text h1{
+        background-color: black;
+        color: white;
+        font-size: 1.7em;
+        width: 150%;
+    }
+    .next_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+    }
+    .nextButton{
+        border:none;
+        background-color: #C51C39;
+        color:black;
+        border-radius: 15px;
+        font-size: 1.2em;
+        width:8%;
+        box-shadow: 10px 8px 5px rgb(129, 129, 129);
+        font-family: 'Major Mono Display', monospace;
+    }
+    .friesBackground{
+        top: 0;
+        left: 0;
+        width: 110%;
+        position: fixed;
+        z-index: -3;
+        height:100%;
+        margin-left: -100px;
+
+    }
+    .zombie_hands{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .zombie_hands img{
+        height:189px;
+        width:400px;
+    }
+    .stress_prize{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Major Mono Display", monospace;
+    }
+    .prize_stress{
+        font-size: 2em;
+        margin-top: -50px;
+    }
+    .again_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .againButton{
+        border:none;
+        background-color: #C51C39;
+        color:white;
+        border-radius: 15px;
+        font-size: 1.2em;
+        width:12%;
+        box-shadow: 10px 8px 5px rgb(168, 166, 166);
+        font-family: 'Major Mono Display', monospace;
+    }
+
+
+    .hand_and_fry{
+        display: flex;
+        justify-content: center;
+    }
+    .z_hand {
+        position: fixed;
+        bottom: 0;
+        height:320px;
+        width:350px;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%) translateY(50%);
+      }
+      
+    .fries {
+        height: 280px;
+        width: 280px;
+        position: fixed;
+        bottom:-2;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        z-index: 3;
+    }
+    .star{
+        height:300px;
+        width: 320px;
+        position:fixed;
+        bottom:0;
+        left:38.5%;
+        top: 42%;        
+        z-index: -1;
+        animation: fade-out-star 8s ease-in-out, rotate 15s infinite;
+    }
+    @keyframes fade-out-star {
+        from {
+            opacity: -10;
+        }
+        to {
+            opacity: 10;
+        }
+    }
+    @keyframes rotate { 
+       from {
+         transform: rotate(0deg);
+       }
+       to {
+         transform: rotate(180deg);
+       }
+    }
+
+}
+    
+
+@media only screen and (max-width: 767px) {
+    body{
+        touch-action: none;
+    }
+    .desktop{
+      display: none;
+    }
+    .background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 105%;
+        height: 100%;
+        z-index: -1;
+    }
+    .background img {
+        width: 100%;
+        margin-left: -12px;
+        height: 100%;
+        object-fit: cover;
+      }
+    .textcontainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 60%;
+        text-align: center;
+    }
+    .textcontainer h1 {
+        font-family: 'Major Mono Display', monospace;
+        color:#C51C39;
+        font-size: 4.2em;
+    }
+    #t2{
+        margin-top: -15px;
+    }
+    .textcontainer h2{
+        font-family: 'Major Mono Display', monospace;
+        color:white;
+        font-size: 1.5em;
+        margin-top: -5px;
+    }
+    .byprego{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logo{
+        width:30%;
+    }
+    .buttonContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+    .startButton{
+        background-color: #C51C39;
+        color:black;
+        border-radius: 15px;
+        font-size: 1.3em;
+        border:none;
+        box-shadow: 10px 8px 5px rgb(17, 17, 17);
+        font-family: 'Major Mono Display', monospace;
+    }
+
+    .zombiecontainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7%;
+        margin-top: 23%;
+    }
+    .zimage{
+        position:relative;
+        width:95%;
+        height:95%;
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width:100%;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+        margin-top: -15px;
+    }
+    .click{
+        letter-spacing: 5px;
+        font-size: 12px;
+        width: 80%;
+    }
+    .top{
+        height:20%;
+        background-color: #F0F0F0;    
+    }   
+    .gametitle{
+        width:100%;
+        font-family:'Major Mono Display', monospace ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:#C51C39;
+        font-size: 2em;
+    }
+    /* DOPAMINE, STRESS AND TIME LEVELS */  
+    .levels{
+        display:flex;
+        width:100vw;
+        margin-top: 15px !important;
+        justify-content: right;
+        align-items: right;
+        text-align: right;
+        font-family: "Major Mono Display", monospace;
+    }
+    #barras{
+        padding:0 ;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        text-align: right;
+        height: 15px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .barra{
+        background-color:black;
+    }
+    #d-title{
+        background-color: black;
+        color:white;
+        font-size: 0.7em;
+    }
+    #s-title{
+        background-color: black;
+        color:white;
+        font-size: 0.7em;
+    }
+    #cuadrados{
+        margin-top: 5px;
+        width: 85%;
+        margin-left: 6px;
+        display: flex;
+        justify-content: center;
+    }
+    .cuadrado{
+        height:15px;
+        margin-left: 3px;
+        background-color:black;
+        border-color: black;
+        border: 1px solid #000;
+    }
+    #t-number{
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    .square{
+        background-color: white;
+        height: 68vh;
+    }
+    #white{
+        background-color: #fff;
+        width:100%;
+        height:100%;
+    }
+    
+    .images{
+        background-color: #f0f0f0;
+        height:18%;
+        position: fixed;
+        bottom:0;
+        width:100%;
+    }
+    
+    .carousel-container{
+        width: 100%;
+        height:8%;
+        position: relative;
+    }
+
+    .carousel-images {
+        display: flex;        
+        width: calc(100% - 60px);
+        margin: 0 0px;
+    }
+
+    #im1{
+        margin-left: 0px;
+    }
+    .carousel-images img {
+        width: 23%;
+        height: 100%;
+        margin-top:3%;
+        cursor:pointer;
+        margin-left: 3px;
+    }
+    .choose{
+        font-family: 'Major Mono Display',monospace;
+        font-size: 0.85em;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+    .carousel-button {
+        position: absolute;
+        margin-top: 2%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+    
+    .carousel-button-left {
+        left: 0;
+        margin-left: 8px;
+    }
+    
+    .carousel-button-right {
+        right: 0;
+    
+        margin-right: 8px;
+    }
+    .failed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .try{
+        display:none;
+    }
+    .dont{
+        font-family: "Major Mono Display", monospace;
+        font-size: 2em;
+        color:black;
+    }
+    .stress{
+        font-family: "Major Mono Display", monospace;
+        font-size: 3em;
+        color:#C51C39;
+    }
+    .kill{
+        font-family: "Major Mono Display", monospace;
+        font-size: 2.5em;
+        color:black;
+    }
+    .tryAgain{
+        background-color: #C51C39;
+        color:black;
+        border-radius: 15px;
+        font-size:2.5em;
+        border:none;
+        box-shadow: 10px 8px 5px rgb(17, 17, 17);
+        font-family: 'Major Mono Display', monospace;
+    }
+
+    /* CHECK YOUR RESULTS PAGE*/
+    #fourthScreen{
+        display:none;
+    }
+
+    .backgroundWhite{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 105%;
+        height: 100%;
+        z-index: -1;
+    }
+    .backgroundWhite img {
+        width: 100%;
+        margin-left: -12px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .textcontainers{
+        display: flex;
+        justify-content: center;
+        margin-top: 40%;
+        text-align: center;
+    }
+    .checks h1{
+        font-family: 'Major Mono Display', monospace;
+        font-size: 2em;
+        color:black;
+    }
+    #stitle{
+        font-size: 3em;
+        color:#C51C39;
+    }
+    .dopa{
+        font-family: 'Major Mono Display', monospace;
+        font-size: 1.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        background-color: #000;
+        color:white;
+        width: 70%;
+        margin-left: 14%;
+    }
+    .numero{
+        font-family: 'Major Mono Display', monospace;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+
+    }
+
+    .cbutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .nextb{
+        background-color: #C51C39;
+        color:black;
+        border-radius: 15px;
+        font-size: 1.3em;
+        border:none;
+        width:32%;
+        box-shadow: 10px 8px 5px rgb(163, 163, 163);
+        font-family: 'Major Mono Display', monospace;
+    }
+    #fifthScreen{
+        display: none;
+    }
+    .enjcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .enjcontainer h1{
+        margin-top: 15%;
+        font-family: "Major Mono Display", monospace;
+        font-size: 1em;
+    }
+    .enjcontainer h2{
+        font-family: "Major Mono Display", monospace;
+        font-size: 2em;
+        margin-top: -8%;
+    }
+  
+    .pbutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+
+    }
+    .pab{
+        background-color: #C51C39;
+        color:white;
+        border-radius: 15px;
+        font-size: 1.3em;
+        border:none;
+        margin-top: -20%;
+        height:38px;
+        width:50%;
+        box-shadow: 5px 5px 2px rgb(163, 163, 163);
+        font-family: 'Major Mono Display', monospace;
+    }
+    .z_hand{
+        position: fixed;
+        margin-top: 250px;
+        height:400px;
+        width:300px;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%) translateY(50%);
+    }
+    .fries{
+        height: 280px;
+        width: 280px;
+        position: fixed;
+        margin-top:250px;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        z-index: 3;
+    }
+    .star{
+        height:300px;
+        width: 320px;
+        position:fixed;
+        left:12%;
+        margin-top:10px;    
+        z-index: -1;
+        animation: fade-out-star 8s ease-in-out, rotate 15s infinite;
+    }
+    @keyframes fade-out-star {
+        from {
+            opacity: -10;
+        }
+        to {
+            opacity: 10;
+        }
+    }
+    @keyframes rotate { 
+       from {
+         transform: rotate(0deg);
+       }
+       to {
+         transform: rotate(180deg);
+       }
+    }
+    
+}
+
