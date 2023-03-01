@@ -484,7 +484,7 @@ div.addEventListener("touchstart", function(event) {
     document.getElementById("l-number").innerHTML="-"+value+"%";
 	stressBarras(value)
 	return value;
-  }, 1250);
+  }, 1000);
 });
 
 
@@ -502,9 +502,9 @@ function stressBarras(porcentaje){
 		document.getElementById("c1"&&"c2" && "c3").style.backgroundColor = "white";
 	} else if (porcentaje === 8) {
 		document.getElementById("c1"&&"c2" && "c3" && 'c4').style.backgroundColor = "white";
-	} else if (porcentaje === 9) {
+	} else if (porcentaje === 25) {
 		document.getElementById("c1"&&"c2" && "c3" && 'c4' && 'c5').style.backgroundColor = "white";
-	} else if (porcentaje === 10) {
+	} else if (porcentaje === 30) {
 		document.getElementById("c1"&&"c2" && "c3" && 'c4' && 'c5'&& 'c6').style.backgroundColor = "white";
 	}
 }
@@ -522,7 +522,7 @@ function startStress() {
 		document.getElementById("s-number").innerHTML="-"+strPorcentage+"%";
 		strBarras(strPorcentage)
 		return strPorcentage;
-	},1250)
+	},1500)
 }
 
 
@@ -540,9 +540,9 @@ function strBarras(strPorcentage){
 		document.getElementById("s1"&&"s2" && "s3").style.backgroundColor = "white";
 	} else if (strPorcentage === 8) {
 		document.getElementById("s1"&&"s2" && "s3" && 's4').style.backgroundColor = "white";
-	} else if (strPorcentage === 9) {
+	} else if (strPorcentage === 25) {
 		document.getElementById("s1"&&"s2" && "s3" && 's4' && 's5').style.backgroundColor = "white";
-	} else if (strPorcentage === 10) {
+	} else if (strPorcentage === 30) {
 		document.getElementById("s1"&&"s2" && "s3" && 's4' && 's5'&& 's6').style.backgroundColor = "white";
 	}
 }
